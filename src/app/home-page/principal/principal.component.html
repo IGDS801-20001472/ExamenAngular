@@ -1,0 +1,54 @@
+
+    <body>
+<div class="container" [ngClass]="{'fondo-card-1': hoverCard === 1, 'fondo-card-2': hoverCard === 2, 'fondo-card-3': hoverCard === 3, 'fondo-card-4': hoverCard === 4, 'fondo-card-5': hoverCard === 5}"></div>
+
+    <div class="content">
+       <div class="banner">
+        <div class="card" (click)="irCatalogo(1)" (mouseenter)="hoverCard = 1" (mouseleave)="hoverCard = 0" style="background-color: white;" >
+            <h1 class="titulos-banner">Mundo Abierto</h1>
+            <img class="img-banner" src="https://media.revistagq.com/photos/6105a5e0170e728db45e7649/4:3/w_1200,h_900,c_limit/Zelda-Breath-of-the-Wild.jpeg" alt="">
+        </div>
+        
+        <div class="card" (mouseenter)="hoverCard = 2" (mouseleave)="hoverCard = 0" style="background-color: purple;">
+            <h1 class="titulos-banner">Disparos</h1>
+            <img class="img-banner" src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltd31831eda9199937/62abc0df5cbe472513c0ce59/Cortez_Base_Game-Bnet_Game-Card_Feature-960x540.jpg" alt="">
+        </div>
+        
+        <div class="card" (mouseenter)="hoverCard = 3" (mouseleave)="hoverCard = 0" style="background-color: white;">
+            <h1 class="titulos-banner">Aventura</h1>
+            <img class="img-banner" src="https://wallpapers.com/images/featured/tomb-raider-w63px8xmmkzvd64k.jpg" alt="">
+        </div>
+        
+        <div class="card" (mouseenter)="hoverCard = 4" (mouseleave)="hoverCard = 0" style="background-color: purple;">
+            <h1 class="titulos-banner">Plataforma</h1>
+            <img class="img-banner" src="https://nerdizmo.ig.com.br/wp-content/uploads/2022/03/kirby-and-the-forgotten-lands-trailer-lancamento.jpg" alt="">
+        </div>
+
+        <div class="card" (mouseenter)="hoverCard = 5" (mouseleave)="hoverCard = 0" style="background-color: white;">
+            <h1 class="titulos-banner">Retro</h1>
+            <img class="img-banner" src="https://www.researchgate.net/publication/297761283/figure/fig1/AS:652198224601095@1532507582930/Super-Mario-Bros-by-Nintendo-a-very-popular-classic-game-in-popular-culture.png" alt="">
+        </div>
+        </div>
+
+<br> <br>
+
+        <div class="products">
+            <div class="product-card">
+                <img class="icon-product" src="https://cdn-icons-png.flaticon.com/512/5847/5847894.png" alt="">
+                <h1>consolas</h1>
+            </div>
+
+            <div class="product-card">
+                <img class="icon-product" src="https://cdn-icons-png.flaticon.com/512/3790/3790278.png" alt="">
+                <h1>Juegos</h1>
+            </div>
+            
+            <div class="product-card">
+                <img class="icon-product" src="https://cdn-icons-png.flaticon.com/512/5455/5455787.png" alt="">
+                <h1>Membresias</h1>
+            </div>
+        </div>
+
+    </div>
+
+</body>

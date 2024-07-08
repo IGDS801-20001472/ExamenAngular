@@ -1,0 +1,75 @@
+/* contacto.component.css */
+
+.content {
+    position: relative;
+    padding-top: 10%;
+    z-index: 3;
+  }
+  
+  .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .message-container, .info-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: aqua;
+  }
+  
+  .message-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+  
+  .message-container label {
+    font-weight: bold;
+  }
+  
+  .message-container input, 
+  .message-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .message-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .message-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .info-container h2 {
+    margin-top: 0;
+  }
+  
+  .info-container p {
+    margin: 5px 0;
+  }
+  
+  .block {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  

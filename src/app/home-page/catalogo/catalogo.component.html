@@ -1,0 +1,39 @@
+
+<body>
+    
+    <div class="content">
+
+        <div class="title-container">
+            <h1 class="title">Catalogo de Videojuegos</h1>
+        </div>
+        
+        <div class="search-container">
+          <label for="search">Buscar: </label>
+          <input type="text" placeholder="Nombre del juego..." [(ngModel)]="nombreProducto" (input)="searchProducto();">
+        </div>
+
+        <div class="categorias-container">
+          
+          <div class="ck-categorias" *ngFor="let categoria of categorias">
+            <label>
+              <input type="checkbox" name="Categorias" [(ngModel)]="categoria.selected" (change)="toggleCheckbox(categoria)"> {{ categoria.nombreCategoria }}
+            </label>
+          </div>
+        </div>
+
+        <div class="listado-productos">
+            <div class="card" *ngFor="let product of products">
+              <img [src]="product.imagen" alt="{{ product.nombreProducto }}" class="product-image">
+              <h2 class="product-title">{{ product.nombreProducto }}</h2>
+              <h1 class="product-description">${{ product.precio }}</h1>
+              <p class="categoria" *ngIf="product.idCategoria === 1"> Mundo Abierto </p>
+              <p class="categoria" *ngIf="product.idCategoria === 2"> Aventura </p>
+              <p class="categoria" *ngIf="product.idCategoria === 3"> Plataforma </p>
+              <p class="categoria" *ngIf="product.idCategoria === 4"> Retro </p>
+              <p class="categoria" *ngIf="product.idCategoria === 5"> Disparos </p>
+            </div>
+          </div>
+    </div>
+        
+</body>
+    
